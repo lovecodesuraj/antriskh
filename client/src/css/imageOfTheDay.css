@@ -1,0 +1,20 @@
+.imageOfTheDay{
+    width: 80vw;
+    padding: 20px 20px;
+    /* height: 60vh; */
+
+}
+.imageOfTheDay img{
+    width: 40%;
+   margin: 20px;
+    
+}
+.imageOfTheDay .explanation{
+    width: 50%;
+    text-align: center;
+    color: #fff;
+}
+.imageOfTheDay .explanation .date{
+    color: grey;
+}
+

@@ -1,0 +1,33 @@
+
+.intro{
+    width: 80vw;
+    height: 60vh;
+}
+.introText{
+    width: 50vw;
+    height: 90%;
+    color: #fff;
+    flex-direction: column;
+    padding: 50px;
+
+}
+.introText h1{
+
+}
+.introText p{
+    text-align: center;
+}
+
+.image{
+    width: 50vw;
+    height: 90%;
+    
+}
+.circle{
+    animation: rotateHue 2s alternate infinite;
+ }
+ @keyframes rotateHue {
+    to{
+        filter:hue-rotate(360deg);
+    }
+ }
