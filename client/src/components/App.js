@@ -8,6 +8,7 @@ import ImageOfTheDay from "./ImageOfTheDay"
 import Posts from './Posts';
 import Home from './Home';
 import Tracker from './Tracker';
+import Announcement from './announcement';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
      
         <Routes>
           <Route  exact path='/' element={<Home />} />
+          <Route exact path='/announcement' element={< Announcement />} />
         </Routes>
       </Router>
        </div>
