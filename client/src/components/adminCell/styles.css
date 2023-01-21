@@ -1,0 +1,6 @@
+.adminCell{
+  width: 100vw;
+  min-height: 80vh;
+  flex-direction: column;
+  padding: 40px ;
+}

@@ -1,0 +1,49 @@
+.imageOfTheDay{
+    width: 100vw;
+    padding: 20px 20px;
+    /* height: 60vh; */
+    overflow: hidden;
+
+}
+.imageOfTheDay img{
+    width: 25%;
+   margin: 20px;
+    
+}
+.imageOfTheDay .explanation{
+    width: 40%;
+    text-align: center;
+    color: #fff;
+}
+.imageOfTheDay .explanation .date{
+    color: grey;
+}
+
+
+@media only screen and (max-width:470px){
+    .imageOfTheDay{
+        width: 100vw;
+        padding: 0;
+        flex-direction: column;
+        /* overflow: hidden; */
+    
+    }
+    .imageOfTheDay img{
+        width: 70%;
+       margin: 10px;
+       border-radius: 10px;
+        
+    }
+    .imageOfTheDay .explanation{
+        width: 70%;
+        text-align: left;
+        font-size: 12px;
+        color: #fff;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        /* background-color: #fff; */
+    }
+    .imageOfTheDay .explanation .date{
+        color: grey;
+    }
+    
+}

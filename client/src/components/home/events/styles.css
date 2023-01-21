@@ -1,0 +1,62 @@
+.events{
+    width: 100vw;
+    margin: 100px  0;
+    overflow: hidden;
+
+}
+.events h2{
+    max-width: 100vw;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 76px;
+    color: #808080;
+    margin: 20px 0;
+    padding-left: 13.5vw;
+}
+.carousel img{
+    max-width: 90vw;
+    height: 25vh;
+    border-radius: 20px;
+}
+
+.legend{
+    width: 70%;
+    background: transparent;
+}
+.loading_events{
+    margin-top: 20px;
+    border: 0px ;
+    width: 100vw;
+    height: 20vh;
+  color: blueviolet;
+}
+
+@media only screen and (max-width:470px){
+    .events{
+        width: 100vw;
+        margin: 0 0 50px 0;
+        overflow: hidden;
+        margin: 10px 0 50px 0;
+        
+    }
+    .events h2{
+        width: 100vw;
+        font-size: 26px;
+        font-weight: normal;
+        line-height: normal;
+        color: #808080;
+        margin: 0;
+        padding-left: 15vw;
+        margin: 0 0 10px 0;
+    }
+    .carousel img{
+        max-width: 70vw;
+        height: 20vh;
+        border-radius: 10px;
+    }
+    
+    .legend{
+        width: 70%;
+        background: transparent;
+    }
+}

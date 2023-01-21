@@ -1,0 +1,25 @@
+.addToGallery{
+    width: 70vh;
+    min-height: 10vh;
+    padding: 20px ;
+    border: 5px solid grey;
+    border-radius: 10px;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.addToGallery form{
+    flex-direction: column;
+}
+.addToGallery FileBase{
+    width: 80%;
+    height: 80%;
+    padding: 20px;
+}
+.addToGallery button{
+    padding: 20px 20px;
+    border-radius: 10px;
+    background-color: #111333;
+    color: aliceblue;
+   margin: 20px 0;
+}

@@ -1,0 +1,22 @@
+.contact{
+    flex-direction: column;
+}
+.team{
+    width: 100vw;
+    min-height: 100vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 50px;
+    /* background-color: #fff; */
+    /* margin: ; */
+}
+
+.contactForm{
+    /* margin: 50px px; */
+    /* min-height: 0; */
+}
+
+
+@media only screen and (max-width:470px){
+
+}

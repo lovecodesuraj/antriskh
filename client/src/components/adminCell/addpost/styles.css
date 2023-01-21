@@ -1,0 +1,34 @@
+.addPost{
+    width: 60vw;
+    min-height: 50vh;
+    border: 5px solid grey;
+    flex-direction: column;
+    padding: 20px 20px;
+}
+.addPost textarea{
+    margin: 10px;
+    padding: 10px 20px;
+    width: 90%;
+    height: 25vh;
+    background-color: #111222;
+    color: antiquewhite;
+
+ }
+ .addPost input{
+    width: 90%;
+    height: 30px;
+    background-color: #111222;
+    padding: 0 20px;
+    color: antiquewhite;
+
+}
+
+.addPost button{
+    /* height: 50px; */
+    /* width: 100px; */
+    padding: 20px 20px;
+    border-radius: 10px;
+    background-color: #111333;
+    color: aliceblue;
+   margin: 20px 0;
+}
