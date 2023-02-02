@@ -1,4 +1,4 @@
 # antriskh
 ## Description : NITKKR Astronomy And Science Club Website
 ## deployed at : 
-https://legendary-brioche-f054bd.netlify.app/
+https://github.com/lovecodesuraj/antriskh.git
