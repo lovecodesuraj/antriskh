@@ -15,7 +15,7 @@ function Events() {
     setSpinner(true);
     const getData = async () => {
       try {
-        var data = await axios.get("http://localhost:5000/astrons/events");
+        var data = await axios.get("https://antariksh-server-8bq4.onrender.com/astrons/events");
         // data = await data.json();
         setEvents(data.data);
         setSpinner(false);

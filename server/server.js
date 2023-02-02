@@ -1,6 +1,4 @@
 import express from "express";
-import mongoose from "mongoose";
-import { Schema } from "mongoose";
 import bodyParser from "body-parser";
 import cors from 'cors'
 
@@ -26,10 +24,9 @@ app.use(cors());
 connectToDb();
 
 app.use('/astrons',postRoutes);
-// app.use("/file",upload);
-// app.post("./addPost",upload.single('photo'),(req,res,next)=>{
-//      res.send("posted");
-// })
+app.get("/",(req,res)=>{
+   res.send("server is running...")
+})
 
 app.listen(5000,function(res){
     console.log("server is running at port 5000");

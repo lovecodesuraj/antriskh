@@ -10,7 +10,7 @@ const Gallery = () => {
         setSpinner(true);
         const getPhotos = async () => {
             try{
-                var results= await fetch("http://localhost:5000/astrons/gallery");
+                var results= await fetch("https://antariksh-server-8bq4.onrender.com/astrons/gallery");
                 results=await results.json();
                 setPhotos(results);
                 setSpinner(false);

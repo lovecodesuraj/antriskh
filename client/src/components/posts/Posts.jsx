@@ -15,7 +15,7 @@ const Posts = () => {
     const getPosts = async () => {
 
       try {
-        const results = await axios.get("http://localhost:5000/astrons/posts")
+        const results = await axios.get("https://antariksh-server-8bq4.onrender.com/astrons/posts")
         // console.log(results.data[0].photo);
         setSpinner(false)
         setPosts(results.data);
