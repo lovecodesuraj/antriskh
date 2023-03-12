@@ -4,19 +4,18 @@ import { json } from "react-router-dom";
 import Post from "./post/Post";
 import axios from "axios";
 import "./styles.css"
+import { fetchBlogs } from "../../api";
+import { CircularProgress } from "@material-ui/core";
 
 const Posts = () => {
   const [posts, setPosts] = useState([]);
   const [spinner, setSpinner] = useState(false);
 
   useEffect(() => {
-    // if (!posts.length) {
-    setSpinner(true);
     const getPosts = async () => {
-
+      setSpinner(true);
       try {
-        const results = await axios.get("https://antariksh-server-8bq4.onrender.com/astrons/posts")
-        // console.log(results.data[0].photo);
+        const results = await fetchBlogs();
         setSpinner(false)
         setPosts(results.data);
       } catch (err) {
@@ -24,17 +23,14 @@ const Posts = () => {
       }
     }
     getPosts();
-    // }
-
   }, [])
 
 
   return (
-    <> {spinner ? <div className="loading center"><p>loading...</p></div> : <div className="posts center">
-      {posts.map(post => <Post post={post} />)}
-    </div>}
-      {/*  */}
-
+    <>
+      {spinner ? <div  style={{height:"90vh",display:"flex",justifyContent:"center",alignItems:"center"}}><p><CircularProgress /></p></div> : <div className="posts center">
+        {posts.map(post => <Post post={post} />)}
+      </div>}
     </>
   )
 }

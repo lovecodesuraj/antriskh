@@ -31,7 +31,7 @@ const WhatWeDo = () => {
                     </h4>
                     <p>
 
-                        Astronomy Club, ITK, has built its own observatory for astronomical research. It hosts a mammoth 14 inch Celestron EdgeHD, which brings the Heavens down to earth. The observatory was inaugurated in summers'14. It is currently open for observations.
+                        Astronomy Club, NITKKR, has built its own observatory for astronomical research. It hosts a mammoth 14 inch Celestron EdgeHD, which brings the Heavens down to earth. The observatory was inaugurated in summers'14. It is currently open for observations.
                     </p>
                 </div>
 

@@ -1,17 +1,14 @@
 .gallery{
-    min-height: 70vh;
-    width: 100%;
+    /* min-height: 80vh; */
+    width: 100vw;
     display: flex;
+    padding:80px;
     flex-wrap: wrap;
     justify-content: center;
     /* background-color: #16151F; */
 }
 
-.gallery .loading{
-    min-height: 100%;
-    /* background-color:white; */
-    width: 100%;
-}
+
 
 .gallery .loading p{
     font-size: 20px;

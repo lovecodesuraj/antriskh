@@ -1,6 +1,6 @@
 
 import '../App.css';
-import Header from './partials/header/Header';
+// import Header from './partials/header/Header';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import '../css/mousemove.css'
 import { useEffect } from 'react';
@@ -12,15 +12,18 @@ import AdminCell from './adminCell/adminCell';
 import Contact from './contact/contact';
 import Gallery from './gallery/Gallery';
 import Faqs from './faqs/faqs.jsx';
+import Navbar from './partials/header/navbar/Navbar';
+import JoinForm from './forms/join/JoinForm';
 
 function App() {
   return (
     <>
       <div className='app '>
       <Router>
-        <Header />
+        <Navbar />
         <Routes>
           <Route  exact path='/' element={<Home />} />
+          <Route  exact path='/join' element={<JoinForm />} />
           <Route exact path="/blogs" element={<Posts />} />
           <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/gallery" element={<Gallery/>}/>

@@ -27,7 +27,7 @@ const AddPost = () => {
 
     await axios
       .create({
-        baseURL: "https://antariksh-server-8bq4.onrender.com/astrons",
+        baseURL: "https://antariksh-server.onrender.com/astrons",
       })
       .post("/addPost", post)
       .then((res) => {

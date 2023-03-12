@@ -1,6 +1,8 @@
+import { CircularProgress } from "@material-ui/core";
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
+import { fetchGallery } from "../../api";
 import "./styles.css"
 
 const Gallery = () => {
@@ -9,36 +11,35 @@ const Gallery = () => {
     useEffect(() => {
         setSpinner(true);
         const getPhotos = async () => {
-            try{
-                var results= await fetch("https://antariksh-server-8bq4.onrender.com/astrons/gallery");
-                results=await results.json();
-                setPhotos(results);
+            try {
+                const results=await fetchGallery();
+                setPhotos(results.data);
                 setSpinner(false);
-                
-                // console.log(results)
-            }catch(err){
+            } catch (err) {
                 console.log(err);
             }
         }
         getPhotos();
     }, []);
 
-    const view=(image)=>{
-          
+    const view = (image) => {
+
     }
     return (
-        <> 
-        {spinner ? <div className="loading center"><p>loading...</p></div> : <div className="gallery">
-            {photos.map(photo => {
-                return (
-                    <div className="image" onDoubleClick={view(photo.image)} style={{backgroundImage:`url(${photo.image})` , backgroundSize: 'cover',       
-                    backgroundRepeat: 'no-repeat',}}> 
-                       {/* <img src={photo.image} alt="" /> */}
-                    </div>
-                )
-            })}
-        </div>}
-          {/* {spinner?<div className="loading"><p>loading...</p></div>:<div className="loading"><p>loaded</p></div>} */}
+        <>
+            {spinner ? <div style={{height:"90vh",display:"flex",justifyContent:"center",alignItems:"center"}}><p><CircularProgress /></p></div> : <div className="gallery">
+                {photos.map(photo => {
+                    return <>
+                        <div className="image" style={{
+                            backgroundImage: `url(${photo.image})`,
+                            backgroundSize: 'cover',
+                            backgroundRepeat: 'no-repeat',
+                            backgroundPosition:"center",
+                        }}>
+                        </div>
+                    </>
+                })}
+            </div>}
         </>
     )
 }

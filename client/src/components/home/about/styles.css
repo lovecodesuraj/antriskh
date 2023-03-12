@@ -1,7 +1,8 @@
 .about{
    max-width: 100vw;
    min-height: 80vh;
-   margin: 70px;
+   padding:70px;
+   /* margin: 70px 0 0 0; */
    flex-direction: column;
    overflow: hidden;
 }

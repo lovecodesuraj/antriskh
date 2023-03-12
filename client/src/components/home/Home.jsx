@@ -1,6 +1,6 @@
 import React from "react";
 import Posts from "../posts/Posts";
-// import Intro from "./intro/intro";
+import Intro from "./intro/Intro";
 import AddPost from "../adminCell/addpost/AddPost";
 import AddToGallery from "../adminCell/addToGallery/addToGallery";
 import WhatWeDo from "./doings/whatWeDo";
@@ -12,9 +12,9 @@ import Events from "./events/events";
 const Home =()=>{
     return(
         <>
-         {/* <Intro /> */}
+         <Intro />
          <Achievements />
-         <Events />
+         {/* <Events /> */}
         <WhatWeDo />
         <Update />
         <About />
