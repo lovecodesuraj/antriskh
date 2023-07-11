@@ -1,4 +1,4 @@
 # antriskh
 ## Description : NITKKR Astronomy And Science Club Website
 ## deployed at : 
-https://github.com/lovecodesuraj/antriskh.git
+https://nimble-sherbet-4aeb13.netlify.app/
